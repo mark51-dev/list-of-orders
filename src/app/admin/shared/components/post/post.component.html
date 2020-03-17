@@ -1,0 +1,27 @@
+<ul class="asd">
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Название компании: {{ post.nameOfCompany }}
+      </mat-panel-title>
+      <mat-panel-description>
+        Статус заказа: {{ post.orderDone ? 'Выполнен': 'Не выполнен' }}
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Контактное лицо: {{ post.contactName }}</p>
+    <p>Список потенциальных работ: {{ post.listOfPotentialWorks }}</p>
+    <p>Проделаная работа: {{ post.worksDone }}</p>
+    <p>Полная сумма: {{ post.fullSumOfMoney }}</p>
+    <p>Аванс: {{ post.prepaidExpense }}</p>
+    <p>Откуда пришел клиент: {{ post.whereDidTheClientComeFrom }}</p>
+    <p>Комерческое предложение отправлено: {{ post.commercialOfferSent ? 'Да' : 'Нет' }}</p>
+    <p>Крайний срок выполнения заказа: {{ post.deadline }}</p>
+    <p>Дата выполненого заказа: {{ post.orderDoneDate }}</p>
+    <p>Дата начала выполнения заказа: {{ post.orderBeginDate }}</p>
+    <p>Примечание: {{ post.note }}</p>
+    <div class="example-button-row">
+      <button mat-raised-button [routerLink]="['/edit', post.id]">Редактировать</button>
+    </div>
+  </mat-expansion-panel>
+</ul>

@@ -1,0 +1,58 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <mat-form-field class="example-full-width">
+    <mat-label>Имя Компании</mat-label>
+    <input matInput placeholder="Имя Компании" formControlName="nameOfCompany">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Контактное лицо</mat-label>
+    <input matInput placeholder="Контактное лицо" formControlName="contactName">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Список потенциальных работ</mat-label>
+    <input matInput placeholder="Список потенциальных работ" formControlName="listOfPotentialWorks">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Выполненые работы</mat-label>
+    <input matInput placeholder="Выполненые работы" formControlName="worksDone">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Ожидаемая сумма</mat-label>
+    <input matInput placeholder="Ожидаемая сумма" formControlName="fullSumOfMoney">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Аванс</mat-label>
+    <input matInput placeholder="Аванс" formControlName="prepaidExpense">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Комерческое предложение отправлено</mat-label>
+    <input matInput placeholder="Комерческое предложение отправлено" formControlName="commercialOfferSent">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Откуда пришел клиент</mat-label>
+    <input matInput placeholder="Откуда пришел клиент" formControlName="whereDidTheClientComeFrom">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Крайний срок выполнения заказа</mat-label>
+    <input matInput placeholder="Крайний срок выполнения заказа" formControlName="deadline">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Заказ полностью выполнен</mat-label>
+    <input matInput placeholder="Крайний срок выполнения заказа" formControlName="orderDone">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Дата начала работ</mat-label>
+    <input matInput placeholder="Дата начала работ" formControlName="orderBeginDate">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Дата окончания работ</mat-label>
+    <input matInput placeholder="Дата окончания работ" formControlName="orderDoneDate">
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Примечание</mat-label>
+    <textarea matInput placeholder="Примечание" formControlName="note"></textarea>
+  </mat-form-field>
+  <div class="example-button-row">
+    <button mat-button color="primary">Сохранить</button>
+  </div>
+
+</form>
